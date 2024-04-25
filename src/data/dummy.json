@@ -1,0 +1,20 @@
+{
+  "carts": [
+    {
+      "item_id": 1,
+      "item_name": "Blue denim shirt",
+      "item_color": "BLUE",
+      "item_size": "M",
+      "item_category": ["Shirt", "BLUE"],
+      "item_price": "17.99"
+    },
+    {
+      "item_id": 2,
+      "item_name": "Red hoodie",
+      "item_color": "RED",
+      "item_size": "M",
+      "item_category": ["Hoodie", "RED"],
+      "item_price": "35.99"
+    }
+  ]
+}
