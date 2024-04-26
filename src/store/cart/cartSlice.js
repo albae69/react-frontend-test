@@ -13,9 +13,19 @@ export const cartSlice = createSlice({
     insert: (state, action) => {
       state.carts.push(action.payload)
     },
-    update: (state, action) => {},
+    update: (state, action) => {
+      state.carts = state.carts.map((item) => {
+        if (item.item_id == action.payload.item_id) {
+          return action.payload
+        } else {
+          return item
+        }
+      })
+    },
     remove: (state, action) => {
-      state.carts.filter((item) => item.id != action.payload.id)
+      state.carts = state.carts.filter(
+        (item) => item.item_id != action.payload.item_id
+      )
     },
   },
 })
